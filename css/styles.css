@@ -1,0 +1,162 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F2E4D8; /* Color de fondo principal */
+    color: #405940; /* Color del texto principal */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#start-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2E4D8; /* Fondo del contenedor de inicio */
+    background: linear-gradient(to bottom, #4F6672, #B7B7B8);
+
+}
+
+#start-button {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente y estilo del botón */
+    background-color: #1C2436; /* Fondo del botón */
+    color: #F2E4D8; /* Texto del botón */
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del cargador de animación */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #F2E4D8; /* Fondo del cargador */
+    background: linear-gradient(to bottom, #BF8641, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Mantener por encima del contenido principal */
+}
+
+/* Estilos para el contenedor de la animación */
+#animation-container {
+    width: 300px;
+    height: 300px;
+}
+
+/* Estilos para la imagen principal */
+.photo {
+    margin: 0;
+}
+
+#main-photo {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección de cuenta regresiva */
+.countdown {
+    padding: 20px;
+    background-color: #1C2436; /* Fondo de la sección de cuenta regresiva */
+    background: linear-gradient(to bottom, #1C2436, #B7B7B8);
+}
+
+#countdown-timer {
+    font-size: 2em;
+    color: #ffffff; /* Color del texto del temporizador */
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre recuadros */
+    flex-wrap: wrap;
+}
+
+.countdown-box {
+    background-color: #BF8641; /* Color de fondo de los recuadros */
+    color: #ffffff; /* Color del texto dentro de los recuadros */
+    padding: 10px; /* Relleno dentro de los recuadros */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 60px; /* Ancho de los recuadros */
+    text-align: center;
+}
+
+.countdown-box p {
+    margin: 0;
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+/* Estilos para la galería de fotos y videos */
+.gallery {
+    padding: 20px;
+}
+
+.gallery h1 {
+    color: #ffffff; /* Color del título de la galería */
+    padding: 20px;
+    background: linear-gradient(to bottom, #1C2436, #B7B7B8);
+}
+
+/* Espacios para las fotos y videos en la galería */
+.photo-space {
+    width: 80%;
+    max-width: 640px;
+    margin: 10px auto;
+    background-color: #DDD; /* Fondo de los espacios para fotos */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.photo-space img, .photo-space video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Clase para texto con contorno */
+.outlined-text {
+    color: white; /* Color del texto */
+    text-shadow: 
+        -1px -1px 0 #000000,  
+         1px -1px 0 #4F6672,
+        -1px  1px 0 #405940,
+         1px  1px 0 #BF8641;  /* Sombra de texto para crear el contorno negro */
+         
+    }
+
+/* Estilos para la sección de contacto */
+.contact {
+    padding: 20px;
+    background-color: #1C2436; /* Fondo de la sección de contacto */
+    color: #ffffff; /* Color del texto */
+    margin-top: 20px;
+}
+
+.contact a {
+    color: #BF8641; /* Color del enlace */
+    text-decoration: none;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .photo-space {
+        width: 100%;
+        height: auto;
+    }
+}
