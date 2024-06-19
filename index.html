@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Baby Shower</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <!-- Botón de inicio -->
+    <div id="start-container">
+        <button id="start-button">¡Click aquí y suba el volumen!</button>
+    </div>
+    <div id="loader" style="display: none;">
+        <div id="animation-container"></div>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- Imagen principal -->
+        <section class="photo">
+            <img src="fotos/corte2.png" alt="Imagen del Baby Shower" id="main-photo" usemap="#image-map">
+            <map name="image-map">
+                <area target="_blank" alt="ConfirmacionPapa" title="ConfirmacionPapa" href="https://api.whatsapp.com/send?phone=521557609%208900&amp;text=Hola+soy+[NombreInvitado]+y+confirmo+mi+asistencia+al+Baby+Shower+%F0%9F%98%87" coords="570,996,346,923" shape="rect">
+                <area target="_blank" alt="ConfirmacionAsistenciaParteDeMama" title="ConfirmacionAsistenciaParteDeMama" href="https://api.whatsapp.com/send?phone=525537153747&amp;text=Hola+soy+[NombreInvitado]+y+confirmo+mi+asistencia+al+Baby+Shower+%F0%9F%98%87" coords="307,995,85,925" shape="rect">
+                <area target="_blank" alt="UbicaciónDeRecepción" title="UbicaciónDeRecepción" href="https://maps.app.goo.gl/yNjPWELeRniopF3N8" coords="429,1015,215,1082" shape="rect">
+            </map>
+        </section>
+        
+        <!-- Cuenta regresiva -->
+        <section class="countdown">
+            <h1 class="outlined-text">El evento comienza en...</h1>
+            <div id="countdown-timer"></div>
+        </section>
+
+        <!-- Galería de fotos y videos -->
+        <section class="gallery">
+            <h1 class="outlined-text">¡Fotos de los protagonistas! 🤩</h1>
+            <!-- Espacios para las fotos y videos -->
+            <div class="photo-space">
+                <img src="fotos/protagonistas.jpeg" alt="Foto 1">
+            </div>
+            <div class="photo-space">
+                <img src="fotos/bebe1.png" alt="Foto 2">
+            </div>
+            <div class="photo-space">
+                <video src="fotos/video1.mp4" controls></video>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section class="contact">
+            <h1>Contacto</h1>
+            <p>Dudas o cotizaciones al correo: <a href="mailto:alanprcom1@gmail.com">alanprcom1@gmail.com</a></p>
+        </section>
+    </div>
+
+    <!-- Elemento de audio para reproducir la canción -->
+    <audio id="bg-music" src="audio/canciontarzan1.mp3" preload="auto"></audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
