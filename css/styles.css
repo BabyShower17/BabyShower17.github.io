@@ -159,4 +159,9 @@ body {
         width: 100%;
         height: auto;
     }
+    #main-photo {
+    width: 100%;
+    height: auto;
+    }
+
 }
