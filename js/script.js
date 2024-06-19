@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', function () {
     const startButton = document.getElementById('start-button');
     const audio = document.getElementById('bg-music');
@@ -65,6 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     countdownTimer.innerHTML = "<div class='countdown-container'><p>¡El evento ha comenzado!</p></div>";
                 }
             }, 1000);
+        });
+    });
+
+    // Agregar eventos touchstart para compatibilidad con dispositivos táctiles
+    const areas = document.querySelectorAll('area');
+    areas.forEach(area => {
+        area.addEventListener('touchstart', function () {
+            window.location.href = area.href;
         });
     });
 });
