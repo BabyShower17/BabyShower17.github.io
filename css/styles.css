@@ -19,7 +19,6 @@ body {
     align-items: center;
     background-color: #F2E4D8; /* Fondo del contenedor de inicio */
     background: linear-gradient(to bottom, #4F6672, #B7B7B8);
-
 }
 
 #start-button {
@@ -163,5 +162,4 @@ body {
     width: 100%;
     height: auto;
     }
-
 }
